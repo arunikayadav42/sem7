@@ -1,0 +1,381 @@
+h(n) = 0;
+Enter file name
+file1.txt
+Start State 
+1	3	2	
+4	6	5	
+7	8	0	
+
+Goal State 
+
+1	2	3	
+4	5	6	
+7	8	0	
+Goal Node reached 
+Total Number of nodes explored before termination : 18909
+Total number of nodes on optimal path : 19
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	18909			            19			18			361259
+Optimal Path : 
+1	3	2	
+4	6	5	
+7	8	0	
+
+1	3	2	
+4	6	0	
+7	8	5	
+
+1	3	0	
+4	6	2	
+7	8	5	
+
+1	0	3	
+4	6	2	
+7	8	5	
+
+0	1	3	
+4	6	2	
+7	8	5	
+
+4	1	3	
+0	6	2	
+7	8	5	
+
+4	1	3	
+7	6	2	
+0	8	5	
+
+4	1	3	
+7	6	2	
+8	0	5	
+
+4	1	3	
+7	0	2	
+8	6	5	
+
+4	1	3	
+7	2	0	
+8	6	5	
+
+4	1	3	
+7	2	5	
+8	6	0	
+
+4	1	3	
+7	2	5	
+8	0	6	
+
+4	1	3	
+7	2	5	
+0	8	6	
+
+4	1	3	
+0	2	5	
+7	8	6	
+
+0	1	3	
+4	2	5	
+7	8	6	
+
+1	0	3		
+4	2	5	
+7	8	6	
+
+1	2	3	
+4	0	5	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+---------------------------------------------------------------------------------
+h(n) = number of tiles displaced
+Enter file name
+file1.txt
+Start State 
+1	3	2	
+4	6	5	
+7	8	0	
+
+Goal State 
+
+1	2	3	
+4	5	6	
+7	8	0	
+Goal Node reached 
+Total Number of nodes explored before termination : 1781
+Total number of nodes on optimal path : 19
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	1781					19				18			41012
+Optimal Path : 
+1	3	2	
+4	6	5	
+7	8	0	
+
+1	3	2	
+4	6	0	
+7	8	5	
+
+1	3	0	
+4	6	2	
+7	8	5	
+
+1	0	3	
+4	6	2	
+7	8	5	
+
+0	1	3	
+4	6	2	
+7	8	5	
+
+4	1	3	
+0	6	2	
+7	8	5	
+
+4	1	3	
+7	6	2	
+0	8	5	
+
+4	1	3	
+7	6	2	
+8	0	5	
+
+4	1	3	
+7	0	2	
+8	6	5	
+
+4	1	3	
+7	2	0	
+8	6	5	
+
+4	1	3	
+7	2	5	
+8	6	0	
+
+4	1	3	
+7	2	5	
+8	0	6	
+
+4	1	3	
+7	2	5	
+0	8	6	
+
+4	1	3	
+0	2	5	
+7	8	6	
+
+0	1	3	
+4	2	5	
+7	8	6	
+
+1	0	3	
+4	2	5	
+7	8	6	
+
+1	2	3	
+4	0	5	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+	
+--------------------------------------------------------------------------------
+h(n) = Manhattan Distance
+Enter file name
+file1.txt
+Start State 
+1	3	2	
+4	6	5	
+7	8	0	
+
+Goal State 
+
+1	2	3	
+4	5	6	
+7	8	0	
+Goal Node reached 
+Total Number of nodes explored before termination : 598
+Total number of nodes on optimal path : 19
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	598						19				18			36561
+Optimal Path : 
+1	3	2	
+4	6	5	
+7	8	0	
+
+1	3	2	
+4	6	0	
+7	8	5	
+
+1	3	2	
+4	0	6	
+7	8	5	
+
+1	0	2	
+4	3	6	
+7	8	5	
+
+0	1	2	
+4	3	6	
+7	8	5	
+
+4	1	2	
+0	3	6	
+7	8	5	
+
+4	1	2	
+7	3	6	
+0	8	5	
+
+4	1	2	
+7	3	6	
+8	0	5	
+
+4	1	2	
+7	3	6	
+8	5	0	
+
+4	1	2	
+7	3	0	
+8	5	6	
+
+4	1	2	
+7	0	3	
+8	5	6	
+
+4	1	2	
+7	5	3	
+8	0	6	
+
+4	1	2	
+7	5	3	
+0	8	6	
+
+4	1	2	
+0	5	3	
+7	8	6	
+
+0	1	2	
+4	5	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+--------------------------------------------------------------------------------------------------------
+h(n) = h(n) = abs(x - x_goal)^7  + abs(y - y_goal)^7
+Enter file name
+file1.txt
+Start State 
+1	3	2	
+4	6	5	
+7	8	0	
+
+Goal State 
+
+1	2	3	
+4	5	6	
+7	8	0	
+Goal Node reached 
+Total Number of nodes explored before termination : 233
+Total number of nodes on optimal path : 19
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	233					19					18			14916
+Optimal Path : 
+1	3	2	
+4	6	5	
+7	8	0	
+
+1	3	2	
+4	6	0	
+7	8	5	
+
+1	3	2	
+4	0	6	
+7	8	5	
+
+1	0	2	
+4	3	6	
+7	8	5	
+
+0	1	2	
+4	3	6	
+7	8	5	
+
+4	1	2	
+0	3	6	
+7	8	5	
+
+4	1	2	
+7	3	6	
+0	8	5	
+
+4	1	2	
+7	3	6	
+8	0	5	
+
+4	1	2	
+7	3	6	
+8	5	0	
+
+4	1	2	
+7	3	0	
+8	5	6	
+
+4	1	2	
+7	0	3	
+8	5	6	
+
+4	1	2	
+7	5	3	
+8	0	6	
+
+4	1	2	
+7	5	3	
+0	8	6	
+
+4	1	2	
+0	5	3	
+7	8	6	
+
+0	1	2	
+4	5	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
