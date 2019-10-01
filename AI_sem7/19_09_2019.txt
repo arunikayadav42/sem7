@@ -1,0 +1,32 @@
+1. Naive bayes:
+learning
+alpha is the smoothing parameter to avoid the zero probability as the conditional probability will become zero
+
+[classifying]
+take all the words from the test document
+n[i] : no of times ith term is appearing
+n[ij]: no of times ith term in jth document
+
+OOV : out of vocabulary problem
+unknown word problem
+
+example: class: yes/no
+		 xi's : chinese, beijing, shanghai
+
+		 P(yes) = 3/4
+		 P(no) = 1/4
+
+		 P(Chinese | yes) = 5 + alpha / (8 + 1 * 6)
+		 8 : total words in the class yes
+
+
+		 for test document:
+		 compute P(yes | d5) = P(Chinese | yes) * P(Chinese | yes) * P(Chinese | yes) * P(Tokyo | yes) * P(Japan | yes) * P(yes)
+		 [COMPUTE FOR MULTIVARIATE]
+
+P(x[i] | c[j]) : denotes how good is the token x[i] to classify a document belong to this class [indicator term]
+
+Multivariate:
+	P(x[i] | c[j]) : tells the number of documents under class c[j] in which the token x[i] appears 
+	smoothing is again added, 
+	to prevent the undeflow log is used
