@@ -1,0 +1,814 @@
+Enter file name
+file1.txt
+Start State 
+3	1	2	
+4	5	6	
+7	8	0	
+
+Goal State 
+
+1	2	3	
+4	5	6	
+7	8	0	
+-------------------------------------------------------------------------------------------------------------------
+Heuristic 1 : h(n) = 0
+Goal Node reached 
+Total Number of nodes explored before termination : 8223
+Total number of nodes on optimal path : 17
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+    	8223			17			            16			204834
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	5	6	
+0	7	8	
+
+3	1	2	
+0	5	6	
+4	7	8	
+
+0	1	2	
+3	5	6	
+4	7	8	
+
+1	0	2	
+3	5	6	
+4	7	8	
+
+1	5	2	
+3	0	6	
+4	7	8	
+
+1	5	2	
+0	3	6	
+4	7	8	
+
+1	5	2	
+4	3	6	
+0	7	8	
+
+1	5	2	
+4	3	6	
+7	0	8	
+
+1	5	2	
+4	3	6	
+7	8	0	
+
+1	5	2	
+4	3	0	
+7	8	6	
+
+1	5	2	
+4	0	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonically Restricted
+
+On optimal Path :
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+
+-------------------------------------------------------------------------------------------------------------------
+heuristic 2 : h(n) = number of tiles swapped
+Goal Node reached 
+Total Number of nodes explored before termination : 566
+Total number of nodes on optimal path : 17
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	566			17			16			12710
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	5	6	
+0	7	8	
+
+3	1	2	
+0	5	6	
+4	7	8	
+
+0	1	2	
+3	5	6	
+4	7	8	
+
+1	0	2	
+3	5	6	
+4	7	8	
+
+1	5	2	
+3	0	6	
+4	7	8	
+
+1	5	2	
+0	3	6	
+4	7	8	
+
+1	5	2	
+4	3	6	
+0	7	8	
+
+1	5	2	
+4	3	6	
+7	0	8	
+
+1	5	2	
+4	3	6	
+7	8	0	
+
+1	5	2	
+4	3	0	
+7	8	6	
+
+1	5	2	
+4	0	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonically Restricted
+
+On optimal Path :
+Parent h-value : 3 Child h-value : 4 cost parent->child : 1
+Parent h-value : 4 Child h-value : 5 cost parent->child : 1
+Parent h-value : 5 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 5 cost parent->child : 1
+Parent h-value : 5 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 5 cost parent->child : 1
+Parent h-value : 5 Child h-value : 4 cost parent->child : 1
+Parent h-value : 4 Child h-value : 3 cost parent->child : 1
+Parent h-value : 3 Child h-value : 4 cost parent->child : 1
+Parent h-value : 4 Child h-value : 4 cost parent->child : 1
+Parent h-value : 4 Child h-value : 3 cost parent->child : 1
+Parent h-value : 3 Child h-value : 2 cost parent->child : 1
+Parent h-value : 2 Child h-value : 1 cost parent->child : 1
+Parent h-value : 1 Child h-value : 0 cost parent->child : 1
+
+-------------------------------------------------------------------------------------------------------------------
+heuristic 3 : h(n) = city block / manhattan distance 
+
+Goal Node reached 
+Total Number of nodes explored before termination : 190
+Total number of nodes on optimal path : 17
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	190			17			16			3040
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	5	6	
+0	7	8	
+
+3	1	2	
+0	5	6	
+4	7	8	
+
+0	1	2	
+3	5	6	
+4	7	8	
+
+1	0	2	
+3	5	6	
+4	7	8	
+
+1	5	2	
+3	0	6	
+4	7	8	
+
+1	5	2	
+0	3	6	
+4	7	8	
+
+1	5	2	
+4	3	6	
+0	7	8	
+
+1	5	2	
+4	3	6	
+7	0	8	
+
+1	5	2	
+4	3	6	
+7	8	0	
+
+1	5	2	
+4	3	0	
+7	8	6	
+
+1	5	2	
+4	0	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonically Restricted
+
+On optimal Path :
+Parent h-value : 4 Child h-value : 5 cost parent->child : 1
+Parent h-value : 5 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 7 cost parent->child : 1
+Parent h-value : 7 Child h-value : 8 cost parent->child : 1
+Parent h-value : 8 Child h-value : 7 cost parent->child : 1
+Parent h-value : 7 Child h-value : 8 cost parent->child : 1
+Parent h-value : 8 Child h-value : 7 cost parent->child : 1
+Parent h-value : 7 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 5 cost parent->child : 1
+Parent h-value : 5 Child h-value : 4 cost parent->child : 1
+Parent h-value : 4 Child h-value : 5 cost parent->child : 1
+Parent h-value : 5 Child h-value : 4 cost parent->child : 1
+Parent h-value : 4 Child h-value : 3 cost parent->child : 1
+Parent h-value : 3 Child h-value : 2 cost parent->child : 1
+Parent h-value : 2 Child h-value : 1 cost parent->child : 1
+Parent h-value : 1 Child h-value : 0 cost parent->child : 1
+
+-------------------------------------------------------------------------------------------------------------------
+heuristic 4 : h(n) = abs(x_goal - x_state)^7 + abs(y_goal - y_state)^7
+Goal Node reached 
+Total Number of nodes explored before termination : 174
+Total number of nodes on optimal path : 23
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	174			23			22			3259
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	0	6	
+7	5	8	
+
+3	0	2	
+4	1	6	
+7	5	8	
+
+0	3	2	
+4	1	6	
+7	5	8	
+
+4	3	2	
+0	1	6	
+7	5	8	
+
+4	3	2	
+7	1	6	
+0	5	8	
+
+4	3	2	
+7	1	6	
+5	0	8	
+
+4	3	2	
+7	1	6	
+5	8	0	
+
+4	3	2	
+7	1	0	
+5	8	6	
+
+4	3	0	
+7	1	2	
+5	8	6	
+
+4	0	3	
+7	1	2	
+5	8	6	
+
+4	1	3	
+7	0	2	
+5	8	6	
+
+4	1	3	
+7	2	0	
+5	8	6	
+
+4	1	3	
+7	2	6	
+5	8	0	
+
+4	1	3	
+7	2	6	
+5	0	8	
+
+4	1	3	
+7	2	6	
+0	5	8	
+
+4	1	3	
+0	2	6	
+7	5	8	
+
+0	1	3	
+4	2	6	
+7	5	8	
+
+1	0	3	
+4	2	6	
+7	5	8	
+
+1	2	3	
+4	0	6	
+7	5	8	
+
+1	2	3	
+4	5	6	
+7	0	8	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonically Restricted
+
+On optimal Path :
+Parent h-value : 130 Child h-value : 131 cost parent->child : 1
+Parent h-value : 131 Child h-value : 132 cost parent->child : 1
+Parent h-value : 132 Child h-value : 133 cost parent->child : 1
+Parent h-value : 133 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 7 cost parent->child : 1
+Parent h-value : 7 Child h-value : 8 cost parent->child : 1
+Parent h-value : 8 Child h-value : 9 cost parent->child : 1
+Parent h-value : 9 Child h-value : 8 cost parent->child : 1
+Parent h-value : 8 Child h-value : 9 cost parent->child : 1
+Parent h-value : 9 Child h-value : 10 cost parent->child : 1
+Parent h-value : 10 Child h-value : 9 cost parent->child : 1
+Parent h-value : 9 Child h-value : 8 cost parent->child : 1
+Parent h-value : 8 Child h-value : 7 cost parent->child : 1
+Parent h-value : 7 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 7 cost parent->child : 1
+Parent h-value : 7 Child h-value : 6 cost parent->child : 1
+Parent h-value : 6 Child h-value : 5 cost parent->child : 1
+Parent h-value : 5 Child h-value : 4 cost parent->child : 1
+Parent h-value : 4 Child h-value : 3 cost parent->child : 1
+Parent h-value : 3 Child h-value : 2 cost parent->child : 1
+Parent h-value : 2 Child h-value : 1 cost parent->child : 1
+Parent h-value : 1 Child h-value : 0 cost parent->child : 1
+
+-------------------------------------------------------------------------------------------------------------------
+
+Expansion : h1 > h2 (h2 is a subset of h1) : true
+Expansion : h2 > h3 (h3 is a subset of h2) : true
+
+-------------------------------------------------------------------------------------------------------------------
+
+In CASE when blank tile is considered : 
+
+Enter file name
+file1.txt
+Start State 
+3	1	2	
+4	5	6	
+7	8	0	
+
+Goal State 
+
+1	2	3	
+4	5	6	
+7	8	0	
+-------------------------------------------------------------------------------------------------------------------
+heuristic 1 : h(n) = 0
+
+Goal Node reached 
+Total Number of nodes explored before termination : 8223
+Total number of nodes on optimal path : 17
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	8223			17			16			189857
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	5	6	
+0	7	8	
+
+3	1	2	
+0	5	6	
+4	7	8	
+
+0	1	2	
+3	5	6	
+4	7	8	
+
+1	0	2	
+3	5	6	
+4	7	8	
+
+1	5	2	
+3	0	6	
+4	7	8	
+
+1	5	2	
+0	3	6	
+4	7	8	
+
+1	5	2	
+4	3	6	
+0	7	8	
+
+1	5	2	
+4	3	6	
+7	0	8	
+
+1	5	2	
+4	3	6	
+7	8	0	
+
+1	5	2	
+4	3	0	
+7	8	6	
+
+1	5	2	
+4	0	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonically Restricted
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+Parent h-value : 0 Child h-value : 0 cost parent->child : 1
+-------------------------------------------------------------------------------------------------------------------
+heuristic 2 : h(n) = number of tiles swapped 
+
+Goal Node reached 
+Total Number of nodes explored before termination : 520
+Total number of nodes on optimal path : 17
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	520			17			16			11450
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	5	6	
+0	7	8	
+
+3	1	2	
+0	5	6	
+4	7	8	
+
+0	1	2	
+3	5	6	
+4	7	8	
+
+1	0	2	
+3	5	6	
+4	7	8	
+
+1	5	2	
+3	0	6	
+4	7	8	
+
+1	5	2	
+0	3	6	
+4	7	8	
+
+1	5	2	
+4	3	6	
+0	7	8	
+
+1	5	2	
+4	3	6	
+7	0	8	
+
+1	5	2	
+4	3	6	
+7	8	0	
+
+1	5	2	
+4	3	0	
+7	8	6	
+
+1	5	2	
+4	0	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonic Restriction Not Followed 
+-------------------------------------------------------------------------------------------------------------------
+heuristic 3 : h(n) = city block / manhattan distance
+
+Goal Node reached 
+Total Number of nodes explored before termination : 259
+Total number of nodes on optimal path : 17
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	259			17			16			4249
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	5	6	
+0	7	8	
+
+3	1	2	
+0	5	6	
+4	7	8	
+
+0	1	2	
+3	5	6	
+4	7	8	
+
+1	0	2	
+3	5	6	
+4	7	8	
+
+1	5	2	
+3	0	6	
+4	7	8	
+
+1	5	2	
+0	3	6	
+4	7	8	
+
+1	5	2	
+4	3	6	
+0	7	8	
+
+1	5	2	
+4	3	6	
+7	0	8	
+
+1	5	2	
+4	3	6	
+7	8	0	
+
+1	5	2	
+4	3	0	
+7	8	6	
+
+1	5	2	
+4	0	3	
+7	8	6	
+
+1	0	2	
+4	5	3	
+7	8	6	
+
+1	2	0	
+4	5	3	
+7	8	6	
+
+1	2	3	
+4	5	0	
+7	8	6	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonic Restriction Not Followed 
+-------------------------------------------------------------------------------------------------------------------
+heuristic 4 : h(n) = abs(x_goal - x_state)^7 + abs(y_goal - y_state)^7
+
+Goal Node reached 
+Total Number of nodes explored before termination : 787
+Total number of nodes on optimal path : 25
+TotalStatesExplored	OptimalPathStates	OptimalCost	TotalExecutionTime (in microsecond)
+	787			25			24			16426
+Optimal Path : 
+3	1	2	
+4	5	6	
+7	8	0	
+
+3	1	2	
+4	5	6	
+7	0	8	
+
+3	1	2	
+4	0	6	
+7	5	8	
+
+3	0	2	
+4	1	6	
+7	5	8	
+
+0	3	2	
+4	1	6	
+7	5	8	
+
+4	3	2	
+0	1	6	
+7	5	8	
+
+4	3	2	
+1	0	6	
+7	5	8	
+
+4	0	2	
+1	3	6	
+7	5	8	
+
+0	4	2	
+1	3	6	
+7	5	8	
+
+1	4	2	
+0	3	6	
+7	5	8	
+
+1	4	2	
+7	3	6	
+0	5	8	
+
+1	4	2	
+7	3	6	
+5	0	8	
+
+1	4	2	
+7	3	6	
+5	8	0	
+
+1	4	2	
+7	3	0	
+5	8	6	
+
+1	4	2	
+7	0	3	
+5	8	6	
+
+1	0	2	
+7	4	3	
+5	8	6	
+
+1	2	0	
+7	4	3	
+5	8	6	
+
+1	2	3	
+7	4	0	
+5	8	6	
+
+1	2	3	
+7	4	6	
+5	8	0	
+
+1	2	3	
+7	4	6	
+5	0	8	
+
+1	2	3	
+7	4	6	
+0	5	8	
+
+1	2	3	
+0	4	6	
+7	5	8	
+
+1	2	3	
+4	0	6	
+7	5	8	
+
+1	2	3	
+4	5	6	
+7	0	8	
+
+1	2	3	
+4	5	6	
+7	8	0	
+
+Monotonic Restriction Not Followed
+Expansion : h1 > h2 : 1
+Expansion : h2 > h3 : 0
+-------------------------------------------------------------------------------------------------------------------
+
+
+
